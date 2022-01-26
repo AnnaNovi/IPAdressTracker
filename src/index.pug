@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title IP Address Tracker
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  body 
+    .finder
+      .title IP Address Tracker
+      .search-bar
+        input(type="text" id="entryAdress" placeholder="Search for any IP address or domain").search-bar__input
+        button.search-bar__btn(id="entryAdressBtn")
+      .info
+        .info__block
+          .info__block-subtitle IP Address
+          .info__block-title(id='ipAdress')
+        .info__block
+          .info__block-subtitle Location
+          .info__block-title(id='location')
+        .info__block
+          .info__block-subtitle Timezone
+          .info__block-title UTC 
+            span(id='UTC') 
+        .info__block
+          .info__block-subtitle ISP
+          .info__block-title(id='ISP')
+    .map(id='map')
+
+    script(src="./index.js") 
